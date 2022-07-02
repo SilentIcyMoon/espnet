@@ -12,9 +12,9 @@ dprenet-layers: 2  # one more linear layer w/o non-linear will be added for 0-ce
 dprenet-units: 256
 adim: 384
 aheads: 4
-elayers: 6
+elayers: 3
 eunits: 1536
-dlayers: 6
+dlayers: 3
 dunits: 1536
 postnet-layers: 5
 postnet-filts: 5
@@ -31,7 +31,7 @@ reduction-factor: 3
 
 # minibatch related
 batch-sort-key: output # shuffle or input or output
-batch-bins: 600000   # batch-size * (max_out * dim_out + max_in * dim_in)
+batch-bins: 4554000   # batch-size * (max_out * dim_out + max_in * dim_in)
 
 # training related
 transformer-init: pytorch
